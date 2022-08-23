@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LoginExample</string>
+    <string name="email">Enter yor email</string>
+    <string name="main_heading1">Lecture 04 Example</string>
+    <string name="login_btn1">Login</string>
+    <string name="display_email">Login as %s</string>
+    <string name="dash_btn1">Open dialler</string>
+    <string name="dash_btn2">start service</string>
+    <string name="dash_btn3">Stop service</string>
 </resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+    <string name="inputTextBox">Enter Temperature</string>
+    <string name="radioCelcius">Celcius</string>
+    <string name="radioBtnFahrenheit">Fahrenheit</string>
+    <string name="CalculateBtn">Calculate</string>
+    <string name="txtViewOutput">Answer</string>
+</resources>

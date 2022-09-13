@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtBoxUserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/inputTextBox"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="232dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="59dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoxUserInput">
+
+        <RadioButton
+            android:id="@+id/radioCelcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioCelcius" />
+
+        <RadioButton
+            android:id="@+id/radioBtnFahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioBtnFahrenheit" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/CalcualateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="@string/CalculateBtn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtViewOutput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/txtViewOutput"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/CalcualateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalcualateBtn"
+        app:srcCompat="@drawable/temperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

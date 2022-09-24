@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Activity Manager</string>
+    <string name="enterName">Enter Your Name</string>
+</resources>
